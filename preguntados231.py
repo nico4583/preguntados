@@ -55,7 +55,7 @@ while flag_correr:
             posicion_click = list(evento.pos)
             print(posicion_click)
 
-            if (posicion_click[0] > 300 and posicion_click[0] < 500) and (posicion_click[1] > 20 and posicion_click[1] < 120):
+            if (posicion_click[0] >= 300 and posicion_click[0] <= 500) and (posicion_click[1] >= 20 and posicion_click[1] <= 120):
                 if posicion >= len(lista_preguntas):
                     posicion = 0
                     puntaje = 0
@@ -74,7 +74,7 @@ while flag_correr:
                     errores = 0
                     respuesta_correcta = False
 
-            if (posicion_click[0]>300 and posicion_click[0]<500) and (posicion_click[1]>470 and posicion_click[1]<590):
+            if (posicion_click[0] >= 300 and posicion_click[0] <= 500) and (posicion_click[1] >= 440 and posicion_click[1] <= 590):
                 puntaje = 0
                 posicion = 0
                 errores = 0
@@ -92,19 +92,19 @@ while flag_correr:
 
 
             elif lista_respuestas_correcta[posicion] == "a":
-                if (posicion_click[0]> 20 and posicion_click[0] < 120) and (posicion_click[1] > 340 and posicion_click[1] < 390):
+                if (posicion_click[0] >= 20 and posicion_click[0] <= 120) and (posicion_click[1] >= 340 and posicion_click[1] <= 390):
                     respuesta_correcta = True
                     if errores < 2:
                         puntaje = puntaje + 10
                         texto_puntaje = fuente.render(str(puntaje), True,COLOR_GRIS)
                         posicion = posicion + 1
 
-                elif (posicion_click[0]>300 and posicion_click[0]<400) and (posicion_click[1]>340 and posicion_click[1]<390):
+                elif (posicion_click[0] >= 300 and posicion_click[0] <= 400) and (posicion_click[1] >= 340 and posicion_click[1] <= 390):
                     errores = errores + 1
                     respuesta_b = ""
                     texto_respuesta_b = fuente.render(str(respuesta_b), True,COLOR_GRIS)
 
-                elif (posicion_click[0] > 595 and posicion_click[0] < 680) and (posicion_click[1]>340 and posicion_click[1]<390):
+                elif (posicion_click[0] >= 595 and posicion_click[0] <= 680) and (posicion_click[1] >= 340 and posicion_click[1] <= 390):
                     errores = errores + 1
                     respuesta_c = ""
                     texto_respuesta_c = fuente.render(str(respuesta_c), True,COLOR_GRIS)
@@ -114,19 +114,19 @@ while flag_correr:
 
 
             elif lista_respuestas_correcta[posicion] == "b":
-                if (posicion_click[0]>300 and posicion_click[0]<400) and (posicion_click[1]>340 and posicion_click[1]<390):
+                if (posicion_click[0] >= 300 and posicion_click[0] <= 400) and (posicion_click[1] >= 340 and posicion_click[1] <= 390):
                     respuesta_correcta = True
                     if errores < 2:
                         puntaje = puntaje + 10
                         texto_puntaje = fuente.render(str(puntaje), True,COLOR_GRIS)
                         posicion = posicion + 1
 
-                elif (posicion_click[0]> 20 and posicion_click[0] < 120) and (posicion_click[1] > 340 and posicion_click[1] < 390):
+                elif (posicion_click[0] >= 20 and posicion_click[0] <= 120) and (posicion_click[1] >= 340 and posicion_click[1] <= 390):
                     errores = errores + 1
                     respuesta_a = ""
                     texto_respuesta_a = fuente.render(str(respuesta_a), True,COLOR_GRIS)
 
-                elif (posicion_click[0] > 595 and posicion_click[0] < 680) and (posicion_click[1]>340 and posicion_click[1]<390):
+                elif (posicion_click[0] >= 595 and posicion_click[0] <= 680) and (posicion_click[1] >= 340 and posicion_click[1] <= 390):
                     errores = errores + 1
                     respuesta_c = ""
                     texto_respuesta_c = fuente.render(str(respuesta_c), True,COLOR_GRIS)
@@ -136,19 +136,19 @@ while flag_correr:
 
 
             elif lista_respuestas_correcta[posicion] == "c":
-                if (posicion_click[0] > 595 and posicion_click[0] < 680) and (posicion_click[1]>340 and posicion_click[1]<390):
+                if (posicion_click[0] >= 595 and posicion_click[0] <= 680) and (posicion_click[1] >= 340 and posicion_click[1] <= 390):
                     respuesta_correcta = True
                     if errores < 2:
                         puntaje = puntaje + 10
                         texto_puntaje = fuente.render(str(puntaje), True,COLOR_GRIS)
                         posicion = posicion + 1
 
-                elif (posicion_click[0]> 20 and posicion_click[0] < 120) and (posicion_click[1] > 340 and posicion_click[1] < 390):
+                elif (posicion_click[0] >= 20 and posicion_click[0] <= 120) and (posicion_click[1] >= 340 and posicion_click[1] <= 390):
                     errores = errores + 1
                     respuesta_a = ""
                     texto_respuesta_a = fuente.render(str(respuesta_a), True,COLOR_GRIS)
 
-                elif (posicion_click[0]>300 and posicion_click[0]<400) and (posicion_click[1]>340 and posicion_click[1]<390):
+                elif (posicion_click[0] >= 300 and posicion_click[0] <= 400) and (posicion_click[1] >= 340 and posicion_click[1] <= 390):
                     errores = errores + 1
                     respuesta_b = ""
                     texto_respuesta_b = fuente.render(str(respuesta_b), True,COLOR_GRIS)
